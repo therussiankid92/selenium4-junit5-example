@@ -7,8 +7,14 @@ Make sure you have the following installed on your machine:
   
 ## Running the tests  
 ### Using a local browser  
-- run mvn test -Dtest.execution.type=local  
+- run  
+ ```
+       $ mvn test -Dtest.execution.type=local 
+ ```   
 This will execute the tests in local, in the browser specified in src/test/resources/config.properties  
 ### Using a remote grid of your choice  
-- run mvn test -Dtest.execution.type=remote -Dgrid.Url=http://${ipOfYourGrid}:${portOfYourGrid}/wd/hub  
-This will execute the tests in the remote grid, in the browser specified in src/test/resources/config.properties  
+- run  
+ ```
+      $ mvn test -Dtest.execution.type=remote -Dgrid.Url=http://${ipOfYourGrid}:${portOfYourGrid}/wd/hub
+ ```  
+This will execute the tests in the remote grid, in the browser specified in src/test/resources/config.properties   
